@@ -1,0 +1,24 @@
+<header class="header_dark">
+	{{#with header}}
+	<div class="header">
+		{{> logoBig name=brandName}}
+
+		<nav class="header_nav">
+			<div class="header_nav_right">
+				{{> nav list=links isVertical=false}}
+			</div>
+		</nav>
+	</div>
+
+	<div class="dark">
+		{{#with ad}}
+		<div class="dark_ad">
+			<span class="ad_logo">Ad</span>
+			<a href="{{url}}" class="ad_link">{{text}}: {{url}}</a>
+		</div>
+		{{/with}}
+
+		<div class="dark_user">Users online: {{userOnline}}</div>
+	</div>
+	{{/with}}
+</header>
