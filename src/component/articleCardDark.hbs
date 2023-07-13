@@ -1,0 +1,21 @@
+<div class="articles_box">
+	{{#each articles}}
+	<div class="articles_card" id="{{id}}">
+		<img src="{{photo}}" alt="Photo card" class="card_img" />
+
+		{{#if isNew}}
+		<div class="card_badge">
+			<span class="badge_new">NEW</span>
+		</div>
+		{{/if}}
+
+		<strong class="card_name">{{name}}</strong>
+
+		<p class="card_description">{{description}}</p>
+
+		<div>
+			<button type="submit" class="card_button">Read All</button>
+		</div>
+	</div>
+	{{/each}}
+</div>
