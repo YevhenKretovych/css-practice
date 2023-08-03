@@ -307,87 +307,87 @@ body {
   .tools_link {
     justify-self: flex-end;
   }
-}
 
-.footer_section_1 {
-  padding-top: 80px;
-  padding-bottom: 150px;
+  .footer_section_1 {
+    padding-top: 80px;
+    padding-bottom: 150px;
 
-  display: flex;
-  gap: var(--spacing-8);
-  align-items: center;
-}
+    display: flex;
+    gap: var(--spacing-8);
+    align-items: center;
+  }
 
-.footer_info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-5);
-}
+  .footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+  }
 
-.footer_description {
-  font-size: var(--size-4);
-  line-height: var(--line-height);
-}
+  .footer_description {
+    font-size: var(--size-4);
+    line-height: var(--line-height);
+  }
 
-.info_label {
-  font-size: var(--size-1);
-}
+  .info_label {
+    font-size: var(--size-1);
+  }
 
-.footer_section_2 {
-  padding-top: 80px;
-  padding-bottom: 150px;
+  .footer_section_2 {
+    padding-top: 80px;
+    padding-bottom: 150px;
 
-  display: grid;
-  gap: var(--spacing-9);
-}
+    display: grid;
+    gap: var(--spacing-9);
+  }
 
-.footer_title {
-  font-size: var(--size-6);
-  text-align: center;
-}
+  .footer_title {
+    font-size: var(--size-6);
+    text-align: center;
+  }
 
-.footer_card {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
-  height: 420px;
-}
+  .footer_card {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 420px;
+  }
 
-.card_slack {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
-}
+  .card_slack {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+  }
 
-.card_description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .card_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  padding: var(--spacing-3);
-  height: 100%;
-}
+    padding: var(--spacing-3);
+    height: 100%;
+  }
 
-.slack_description {
-  display: grid;
-  gap: var(--spacing-3);
-}
+  .slack_description {
+    display: grid;
+    gap: var(--spacing-3);
+  }
 
-.slack_label {
-  font-size: var(--size-1);
-}
+  .slack_label {
+    font-size: var(--size-1);
+  }
 
-.slack_info {
-  font-size: var(--size-3);
-  line-height: var(--line-height);
-}
+  .slack_info {
+    font-size: var(--size-3);
+    line-height: var(--line-height);
+  }
 
-.slack_button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #1264a3;
-  font-size: var(--size-1);
+  .slack_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1264a3;
+    font-size: var(--size-1);
+  }
 }
 
 @layer adaptive {
@@ -462,6 +462,13 @@ body {
 
     .footer_card {
       grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+  }
+
+  @media all and (width < 660px) {
+    .footer_card {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -481,10 +488,6 @@ body {
     .footer_image {
       height: 0;
       width: 0;
-    }
-
-    .footer_card {
-      grid-template-columns: 1fr;
     }
   }
 
