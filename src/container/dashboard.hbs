@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Dashboard page
+	</title>
+	<meta charset='utf-8' />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+	<link rel="manifest" href="/fav/site.webmanifest">
+	<link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href='css/normalize.css' rel='stylesheet' />
+
+	<link href='css/dashboard.css' rel='stylesheet' />
+
+	<meta name="viewport"
+		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+
+	<div class="page page--dashboard">
+		<aside class="aside vertical vertical--big page__aside">
+			<div class="aside__logo text">Sidebar</div>
+
+			<nav class="vertical vertical--small">
+				<a href="#" class="nav-button nav-button--active click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
+					<span class="text text--light">Home</span>
+				</a>
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg')"></span>
+					<span class="text text--light">Orders</span>
+				</a>
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
+					<span class="text text--light">Products</span>
+				</a>
+
+				<div class="relative click">
+					<div class="field field--select">
+						<span class="text text--light">Choose...</span>
+						<span class="icon icon__select"
+							style="background-image: url('/svg/header/arrow-bottom.svg')"></span>
+					</div>
+
+					<select class="field__select">
+						<option value="dog">Dog</option>
+						<option value="cat">Cat</option>
+						<option value="hamster">Hamster</option>
+						<option value="parrot">Parrot</option>
+						<option value="spider">Spider</option>
+					</select>
+				</div>
+			</nav>
+		</aside>
+
+		<header class="header">
+			<div class="layout header__content text--small">
+				<div class="header__search relative">
+					<input type="text" placeholder="Search" class="text field field--header">
+					<span class="icon icon__header-search"
+						style="background-image: url('/svg/header/search.svg')"></span>
+					<span class="icon icon__header-settings icon--button icon--color-blue click"
+						style="background-image: url('/svg/header/settings.svg')"></span>
+				</div>
+
+				<div class="header-icon-list">
+					<span class="icon icon__list icon--button icon--color-yellow click"
+						style="background-image: url('/svg/header/communication.svg')"></span>
+					<span class="icon icon__list icon--button icon--color-blue-light click"
+						style="background-image: url('/svg/header/language.svg')"></span>
+					<span class="icon icon__list icon--button icon--color-yellow click"
+						style="background-image: url('/svg/header/message.svg')"></span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main layout">
+			<section class="box analytic__block">
+				<div class="analytic analytic--double analytic--purple">
+					<span class="icon analytic__button icon--button icon--color-purple click"
+						style="background-image: url('/svg/analytic/money.svg')"></span>
+
+					<div class="relative vertical vertical--small">
+						<div class="analytic__title text text--light">$500.00</div>
+						<div class="text text--medium text--lighter">Total earning</div>
+						<span class="icon analytic__arrow icon--button click"
+							style="background-image: url('/svg/analytic/blue-arrow.svg')"></span>
+					</div>
+				</div>
+
+				<div class="analytic analytic--double analytic--blue">
+					<span class="icon analytic__button icon--button icon--color-blue click"
+						style="background-image: url('/svg/analytic/order.svg')"></span>
+
+					<div class="vertical vertical--small">
+						<div class="analytic__title text text--light">$961</div>
+						<div class="text text--medium text--lighter">Total Order</div>
+					</div>
+				</div>
+
+				<div class="analytic analytic--row analytic--blue">
+					<span class="icon analytic__button icon--button icon--color-blue click"
+						style="background-image: url('/svg/analytic/money.svg')"></span>
+
+					<div class="vertical vertical--very-small">
+						<div class="analytic__title-small text text--light">$203k</div>
+						<div class="text text--medium text--lighter">Total Income</div>
+					</div>
+				</div>
+
+				<div class="analytic analytic--row analytic--border">
+					<span class="icon analytic__button icon--button icon--color-yellow click"
+						style="background-image: url('/svg/analytic/box.svg')"></span>
+
+					<div class="vertical vertical--very-small">
+						<div class="analytic__title-small text text--black">$203k</div>
+						<div class="text text--medium text--grey">Total Income</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="checkout__block">
+				<div class="box vertical vertical--big">
+					<div class="text--heading text">Purchase list</div>
+
+					<hr class="divider">
+
+					<div class="personal-data purchase__data">
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>ID437661</span>
+							<span>May 11, 2023, 14:21<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>AirOn ProCam</span>
+							<span>7/8 USB Type-C<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>132.32 EUR</span>
+							<span class="text--warning">Not paid<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>Customer</span>
+							<span>robin@com.de<span>
+						</div>
+					</div>
+
+					<hr class="divider">
+
+					<div class="personal-data purchase__data">
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>ID437661</span>
+							<span>May 11, 2023, 14:21<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>PHILIPS Essential</span>
+							<span>HD9200/90<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>543 USD</span>
+							<span class="text--success">Pay by Stripe<span>
+						</div>
+
+						<div class="vertical vertical--small text text--black text--medium">
+							<span>Customer</span>
+							<span>dima@com.ua<span>
+						</div>
+					</div>
+				</div>
+
+				<div class="box vertical vertical--big">
+					<div class="text--heading text">Payment</div>
+
+					<hr class="divider">
+
+					<div class="vertical vertical--small text text--background text--medium">
+						<div class="payment-radio vertical--very-small click">
+							<input type="radio" checked name="payment-radio">
+							<label>Credit card</label>
+						</div>
+
+						<div class="payment-radio vertical--very-small click">
+							<input type="radio" name="payment-radio">
+							<label>Debit card</label>
+						</div>
+
+						<div class="payment-radio vertical--very-small click">
+							<input type="radio" name="payment-radio">
+							<label>PayPal</label>
+						</div>
+					</div>
+
+					<div class="vertical vertical--big payment__input">
+						<div class="vertical vertical--very-small text text--background text--medium click">
+							<label class="text--line" for="name-card">Name on card</label>
+							<input type="text" id="name-card" class="field card--input">
+						</div>
+
+						<div class="vertical vertical--very-small text text--background text--medium click">
+							<label class="text--line" for="card-number">Credit card number</label>
+							<input type="number" id="card-number" class="field card--input">
+						</div>
+
+						<div class="vertical vertical--very-small text text--background text--medium click">
+							<label class="text--line" for="expiration">Expiration</label>
+							<input type="number" id="expiration" class="field card--input">
+						</div>
+
+						<div class="vertical vertical--very-small text text--background text--medium click">
+							<label class="text--line" for="cvv">CVV</label>
+							<input type="password" id="cvv" class="field card--input">
+						</div>
+					</div>
+
+					<hr class="divider">
+
+					<div class="vertical vertical--big payment__choose">
+						<div class="vertical vertical--very-small click">
+							<label class="text text--background text--medium text--line">Country</label>
+							<div class="relative">
+								<div class="field field--select">
+									<span class="text text--light">Choose...</span>
+									<span class="icon icon__select"
+										style="background-image: url('/svg/header/arrow-bottom.svg')"></span>
+								</div>
+
+								<select class="field__select text text--background">
+									<option value="ukraine">Ukraine</option>
+									<option value="germany">Germany</option>
+									<option value="usa">The United States</option>
+									<option value="canada">Canada</option>
+									<option value="japan">Japan</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="vertical vertical--very-small click">
+							<label class="text text--background text--medium text--line">State</label>
+							<div class="relative">
+								<div class="field field--select">
+									<span class="text text--light">Choose...</span>
+									<span class="icon icon__select"
+										style="background-image: url('/svg/header/arrow-bottom.svg')"></span>
+								</div>
+
+								<select class="field__select text text--background">
+									<option value="sity">sity</option>
+									<option value="province">province</option>
+									<option value="department">department</option>
+									<option value="village">village</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<hr class="divider">
+
+					<div class="">
+						<button type="reset"
+							class="payment__button nav-button nav-button--active text text--light text--line click">
+							Continue to checkout
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+</body>
+
+</html>
