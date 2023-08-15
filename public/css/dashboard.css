@@ -396,15 +396,15 @@ body {
   }
 
   .icon--color-blue {
-    background: var(--color-blue-dark);
+    background-color: var(--color-blue-dark);
   }
 
   .icon--color-yellow {
-    background: var(--color-yellow-light);
+    background-color: var(--color-yellow-light);
   }
 
   .icon--color-blue-light {
-    background: #e1f3fc;
+    background-color: #e1f3fc;
   }
 
   .field--select {
@@ -413,7 +413,7 @@ body {
   }
 
   .icon--color-purple {
-    background: var(--color-purple-dark);
+    background-color: var(--color-purple-dark);
   }
 
   .analytic--double {
@@ -437,7 +437,7 @@ body {
   }
 
   .card--input {
-    padding: 0;
+    width: 100%;
   }
 }
 
